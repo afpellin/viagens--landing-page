@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Explore Vilarejos Europeus</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">Vila Europa</a>
+            <div class="nav-links">
+                <a href="#tripme">Minha Viagem</a>
+                <a href="#meetus">Encontre-nos</a>
+                <a href="#advice">Conselhos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <h1>Descubra Vilarejos Encantadores</h1>
+            <p>Explore os vilarejos mais charmosos da Europa e viva experiências únicas</p>
+            <a href="#tripme" class="btn">Comece sua jornada</a>
+        </section>
+
+        <section id="tripme">
+            <h2 class="section-title">Minha Viagem</h2>
+            <div class="trip-grid">
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Vilarejo nas montanhas">
+                    <div class="trip-content">
+                        <h3>Vilarejos Alpinos</h3>
+                        <p style="text-align:justify">Descubra os encantadores vilarejos escondidos nos Alpes, com sua arquitetura tradicional e
+                            paisagens deslumbrantes.</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Vilarejo costeiro">
+                    <div class="trip-content">
+                        <h3>Cidades Costeiras</h3>
+                        <p style="text-align:justify">Explore vilarejos à beira-mar com casas coloridas, portos pitorescos e a fresca brisa do
+                            Mediterrâneo.</p>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Vilarejo histórico">
+                    <div class="trip-content">
+                        <h3>Joias Históricas</h3>
+                        <p style="text-align:justify">Viaje no tempo através de vilarejos medievais bem preservados, com ruas de paralelepípedos e
+                            castelos imponentes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="meetus">
+            <h2 class="section-title">Encontre-nos</h2>
+            <div class="meet-container">
+                <div class="meet-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Nossos Escritórios</h3>
+                    <p>Estamos presentes nas principais cidades europeias para te atender pessoalmente.</p>
+                </div>
+                <div class="meet-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Eventos</h3>
+                    <p>Participe de nossos encontros e feiras de turismo para conhecer melhor nossos destinos.</p>
+                </div>
+                <div class="meet-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Contato</h3>
+                    <p>Nossa equipe está disponível 24/7 para tirar suas dúvidas e ajudar no planejamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="advice">
+            <h2 class="section-title">Conselhos</h2>
+            <div class="advice-container">
+                <article class="advice-item">
+                    <h3>Quando Visitar</h3>
+                    <p style="text-align:justify">A primavera e o outono são as melhores estações para visitar vilarejos europeus, com temperaturas
+                        amenas e menos turistas.</p>
+                </article>
+                <article class="advice-item">
+                    <h3>Transporte</h3>
+                    <p style="text-align:justify">Muitos vilarejos são melhor explorados a pé. Considere alugar um carro para maior flexibilidade
+                        em áreas rurais.</p>
+                </article>
+                <article class="advice-item">
+                    <h3>Hospedagem</h3>
+                    <p style="text-align:justify">Pousadas familiares e pequenos hotéis boutique oferecem a autêntica experiência local.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#tripme">MinhaViagem</a>
+            <a href="#meetus">Encontre-nos</a>
+            <a href="#advice">Conselhos</a>
+        </div>
+        <p>&copy; 2023 Vila Europa - Todos os direitos reservados</p>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Botão de voltar ao topo
+        window.addEventListener('scroll', function () {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+
+</html>
